@@ -10,3 +10,14 @@ def head_factorial(n):
     return result
 
 print(head_factorial(4))
+
+# Tail Recursion
+def tail_factorial(s, accumulator=1):
+    # base_case
+    if s == 1:
+        return accumulator
+
+    return tail_factorial(s-1, s*accumulator)
+
+print(tail_factorial(5))
+    
